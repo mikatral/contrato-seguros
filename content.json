@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "Contrato Seguros",
+    "subtitle": "Proteger você e sua empresa é nosso contrato.",
+    "cta": "Saiba Mais"
+  },
+
+  "header": {
+    "logoText": "Contrato Seguros",
+    "logoIcon": "/logo-pequena.png",
+    "menu": ["Home", "Sobre", "Serviços", "Contato"]
+  },
+  
+  "about": {
+    "title": "Sobre Nós",
+    "text": "Somos especialistas em desenvolvimento web e mobile, ajudando empresas a crescer no digital."
+  },
+
+  "services": {
+    "title": "Nossos Serviços",
+    "items": [
+      {
+        "name": "Desenvolvimento Web",
+        "description": "Sites rápidos, responsivos e otimizados para SEO."
+      },
+      {
+        "name": "Aplicativos Mobile",
+        "description": "Apps híbridos e nativos para Android e iOS."
+      },
+      {
+        "name": "Consultoria Digital",
+        "description": "Estratégias para impulsionar sua presença online."
+      }
+    ]
+  }
+  
+  
+}
