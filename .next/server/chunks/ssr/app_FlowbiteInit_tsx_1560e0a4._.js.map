@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Documents/code/contrato-seguros/app/FlowbiteInit.tsx"],"sourcesContent":["\"use client\";\r\nimport \"flowbite\";\r\n\r\nexport default function FlowbiteInit() {\r\n  return null;\r\n}\r\n"],"names":[],"mappings":";;;;AACA;AADA;;AAGe,SAAS;IACtB,OAAO;AACT","debugId":null}}]
+}

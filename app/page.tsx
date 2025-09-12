@@ -1,5 +1,8 @@
 import Image from "next/image";
 import content from "../content.json";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+
+
 
 export default function HomePage() {
   return (
@@ -11,7 +14,7 @@ export default function HomePage() {
           <Image
             src={content.header.logoIcon}
             alt="Logo"
-            width={40}
+            width={150}
             height={40}
           />
           {/* Logo Text */}
@@ -20,15 +23,12 @@ export default function HomePage() {
 
         {/* Menu */}
         <nav className="flex gap-6">
-          {content.header.menu.map((item: string, index: number) => (
-            <a
-              key={index}
-              href="#"
-              className="text-gray-700 hover:text-blue-600"
-            >
-              {item}
-            </a>
-          ))}
+          <a
+            href={content.header.menu.url}
+            className="bg-[#15f5ba] text-white px-4 py-2 rounded-lg font-bold hover:bg-red-800 transition"
+          >
+            {content.header.menu.label}
+          </a>
         </nav>
       </header>
 
@@ -53,15 +53,24 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Caixa com imagem à direita */}
-          <div className="bg-white p-6 rounded-2xl shadow-lg flex items-center justify-center mt-6 md:mt-0">
-            <Image
-              src="/img/banner-capa.jpg"
-              alt="Banner Contrato Seguros"
-              width={450}
-              height={300}
-              className="object-contain"
-            />
+          {/* Caixa com carousel à direita */}
+          <div className="bg-white p-4 rounded-2xl shadow-lg flex items-center justify-center mt-6 md:mt-0 w-full md:w-[480px]">
+            <Carousel className="w-full max-w-md">
+              <CarouselContent>
+                {content.hero.carousel.map((img, index) => (
+                  <CarouselItem key={index}>
+                    <Image
+                      src={img}
+                      alt={`Slide ${index + 1}`}
+                      width={600}
+                      height={300}
+                      className="h-full w-auto object-contain"
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+
+            </Carousel>
           </div>
         </section>
 
@@ -74,6 +83,7 @@ export default function HomePage() {
             </h2>
 
             {/* Grid de Cards */}
+            {/* Grid de Cards */}
             <div className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
               {content.services.items.map((service, index) => (
                 <div
@@ -81,8 +91,8 @@ export default function HomePage() {
                   className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition"
                 >
                   <Image
-                    className="rounded-t-lg"
-                    src="/img/logo-pequena.png"
+                    className="rounded-t-lg w-full h-[200px] object-cover"
+                    src={service.image}
                     alt={service.name}
                     width={400}
                     height={200}
@@ -96,7 +106,7 @@ export default function HomePage() {
                     </p>
                     <a
                       href="#"
-                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#15f5ba] rounded-lg hover:bg-[#13d9a6] focus:ring-4 focus:outline-none focus:ring-[#15f5ba]/50"
                     >
                       Saiba Mais
                       <svg
