@@ -1,13 +1,14 @@
 {
   "hero": {
-    "title": "Contrato Seguros",
-    "subtitle": "Proteger você e sua empresa é nosso contrato.",
+    "title": "Convenção Coletiva",
+    "subtitle": "Quando o assunto é Convenção Coletiva, o contrato é nosso.",
+    "text": "Contrato Seguro",
     "cta": "Saiba Mais"
   },
 
   "header": {
-    "logoText": "Contrato Seguros",
-    "logoIcon": "/logo-pequena.png",
+    "logoText": "",
+    "logoIcon": "/img/logo-pequena.png",
     "menu": ["Home", "Sobre", "Serviços", "Contato"]
   },
   

@@ -47,24 +47,32 @@
   :root, :host {
     --color-blue-300: #90c5ff;
     --color-blue-600: #155dfc;
+<<<<<<< HEAD
     --color-blue-700: #1447e6;
     --color-blue-800: #193cb8;
     --color-blue-900: #1c398e;
     --color-gray-50: #f9fafb;
     --color-gray-200: #e5e7eb;
+=======
+    --color-blue-900: #1c398e;
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
     --color-gray-700: #364153;
     --color-gray-900: #101828;
     --color-white: #fff;
     --spacing: .25rem;
+<<<<<<< HEAD
     --container-sm: 24rem;
     --container-6xl: 72rem;
     --container-7xl: 80rem;
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+<<<<<<< HEAD
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-normal: 400;
@@ -73,9 +81,11 @@
     --font-weight-bold: 700;
     --tracking-tight: -.025em;
     --radius-lg: .5rem;
+=======
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
     --radius-2xl: 1rem;
-    --default-transition-duration: .15s;
-    --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-geist-sans);
     --default-mono-font-family: var(--font-geist-mono);
   }
@@ -84,11 +94,15 @@
     :root, :host {
       --color-blue-300: color(display-p3 .602559 .767214 .993938);
       --color-blue-600: color(display-p3 .174493 .358974 .950247);
+<<<<<<< HEAD
       --color-blue-700: color(display-p3 .1379 .274983 .867624);
       --color-blue-800: color(display-p3 .134023 .230647 .695537);
       --color-blue-900: color(display-p3 .136395 .219428 .537145);
       --color-gray-50: color(display-p3 .977213 .98084 .985102);
       --color-gray-200: color(display-p3 .899787 .906171 .92106);
+=======
+      --color-blue-900: color(display-p3 .136395 .219428 .537145);
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
       --color-gray-700: color(display-p3 .219968 .253721 .318679);
       --color-gray-900: color(display-p3 .070423 .0928982 .151928);
     }
@@ -98,11 +112,15 @@
     :root, :host {
       --color-blue-300: lab(77.5052% -6.4629 -36.42);
       --color-blue-600: lab(44.0605% 29.0279 -86.0352);
+<<<<<<< HEAD
       --color-blue-700: lab(36.9089% 35.0961 -85.6872);
       --color-blue-800: lab(30.2514% 27.7854 -70.2699);
       --color-blue-900: lab(26.1542% 15.7545 -51.5504);
       --color-gray-50: lab(98.2596% -.247031 -.706708);
       --color-gray-200: lab(91.6229% -.159085 -2.26791);
+=======
+      --color-blue-900: lab(26.1542% 15.7545 -51.5504);
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
       --color-gray-700: lab(27.1134% -.956401 -12.3224);
       --color-gray-900: lab(8.11897% .811279 -12.254);
     }
@@ -457,11 +475,11 @@
 @layer components;
 
 @layer utilities {
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
 
+<<<<<<< HEAD
   .ms-2:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -488,6 +506,10 @@
 
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+=======
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 
   .mb-3 {
@@ -498,6 +520,7 @@
     margin-bottom: calc(var(--spacing) * 4);
   }
 
+<<<<<<< HEAD
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -506,14 +529,17 @@
     margin-bottom: calc(var(--spacing) * 12);
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   .flex {
     display: flex;
   }
 
-  .grid {
-    display: grid;
+  .h-full {
+    height: 100%;
   }
 
+<<<<<<< HEAD
   .inline-flex {
     display: inline-flex;
   }
@@ -532,12 +558,17 @@
 
   .w-\[200px\] {
     width: 200px;
+=======
+  .min-h-\[400px\] {
+    min-height: 400px;
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 
   .w-full {
     width: 100%;
   }
 
+<<<<<<< HEAD
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
@@ -556,6 +587,10 @@
 
   .grid-cols-\[repeat\(auto-fit\,minmax\(280px\,1fr\)\)\] {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+=======
+  .flex-col {
+    flex-direction: column;
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 
   .items-center {
@@ -578,6 +613,7 @@
     gap: calc(var(--spacing) * 6);
   }
 
+<<<<<<< HEAD
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -610,10 +646,13 @@
     column-gap: calc(var(--spacing) * 30);
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
 
+<<<<<<< HEAD
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -636,14 +675,19 @@
     background-color: var(--color-blue-700);
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   .bg-blue-900 {
     background-color: var(--color-blue-900);
   }
 
+<<<<<<< HEAD
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   .bg-white {
     background-color: var(--color-white);
   }
@@ -652,14 +696,20 @@
     object-fit: contain;
   }
 
+<<<<<<< HEAD
   .p-5 {
     padding: calc(var(--spacing) * 5);
+=======
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
 
+<<<<<<< HEAD
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -668,6 +718,8 @@
     padding-inline: calc(var(--spacing) * 4);
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
@@ -676,6 +728,7 @@
     padding-inline: calc(var(--spacing) * 12);
   }
 
+<<<<<<< HEAD
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
   }
@@ -694,6 +747,10 @@
 
   .text-center {
     text-align: center;
+=======
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 
   .text-2xl {
@@ -701,11 +758,14 @@
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
 
+<<<<<<< HEAD
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -721,6 +781,7 @@
     font-weight: var(--font-weight-bold);
   }
 
+<<<<<<< HEAD
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -743,6 +804,11 @@
 
   .text-blue-900 {
     color: var(--color-blue-900);
+=======
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 
   .text-gray-700 {
@@ -772,6 +838,7 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
+<<<<<<< HEAD
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgba(0, 0, 0, .1)), 0 1px 2px -1px var(--tw-shadow-color, rgba(0, 0, 0, .1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -795,6 +862,8 @@
     }
   }
 
+=======
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   @media (hover: hover) {
     .hover\:text-blue-600:hover {
       color: var(--color-blue-600);
@@ -829,11 +898,12 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:grid-cols-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+    .md\:mt-0 {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
 
+<<<<<<< HEAD
   @media (min-width: 64rem) {
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -850,6 +920,24 @@
 
   .rtl\:rotate-180:where(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)), [dir="rtl"], [dir="rtl"] *) {
     rotate: 180deg;
+=======
+  @media (min-width: 48rem) {
+    .md\:mb-4 {
+      margin-bottom: calc(var(--spacing) * 4);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-\[350px\] {
+      width: 350px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:flex-row {
+      flex-direction: row;
+    }
+>>>>>>> e7ad3d7 (Atualizações na máquina do trabalho do banner)
   }
 }
 
