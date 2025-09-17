@@ -2,7 +2,7 @@
   "hero": {
     "title": "Convenção Coletiva",
     "subtitle": "Quando o assunto é Convenção Coletiva, o contrato é nosso.",
-    "text": "Contrato Seguro",
+    "text": "Contrato Seguros",
     "cta": "Saiba Mais",
     "carousel": [
       "/img/banner-capa.jpg",
@@ -14,7 +14,7 @@
     "logoText": "",
     "logoIcon": "/img/logo-pequena.png",
     "menu": {
-      "label": "Área do Cliente",
+      "label": "Retire o Boleto",
       "url": "https://ihs4.azurewebsites.net/Login"
     }
   },
@@ -26,25 +26,122 @@
     "title": "Nossos Serviços",
     "items": [
       {
-        "name": "Seguro Convenção Coletiva",
+        "name": "Seguro de Convenção Coletiva",
         "description": "Proteção completa para empresas e sindicatos em convenções coletivas.",
-        "image": "/img/seguro-convencao.png"
-      },
-      {
-        "name": "Seguro Empresarial",
-        "description": "Cobertura personalizada para o patrimônio da sua empresa.",
-        "image": "/img/seguro-empresa.png"
+        "image": "/img/seguro-convencao.png",
+        "details": {
+          "intro": "A Contrato Corretora de Seguros atua em mais de 100 Convenções Coletivas...",
+          "body": "Diversas categorias se preocupam e tornam obrigatório o seguro de vida para seus colaboradores...",
+          "highlights": [
+            "Seguro a partir de 1 vida",
+            "Contratação Simplificada",
+            "100% das exigências da CCT",
+            "Sistema de Cobrança próprio",
+            "Sem limite de idade",
+            "Opção de não identificação das vidas",
+            "0800 para todo território Nacional",
+            "Atendimento de sinistro especializado e humanizado"
+          ]
+        }
       },
       {
         "name": "Seguro de Vida",
         "description": "Planos coletivos de saúde com cobertura nacional.",
-        "image": "/img/seguro-vida.png"
+        "image": "/img/seguro-vida1.png",
+        "details": {
+          "intro": "Texto introdutório sobre seguro de vida...",
+          "body": "Mais explicações sobre benefícios do seguro de vida...",
+          "highlights": [
+            "Cobertura nacional",
+            "Planos flexíveis",
+            "Benefícios para dependentes"
+          ]
+        }
       },
       {
-        "name": "Seguro Auto",
-        "description": "Orientação especializada para escolher as melhores soluções.",
-        "image": "/img/seguro-auto.png"
+        "name": "Seguro Odontológico",
+        "description": "Bem-estar e prevenção com atendimento odontológico especializado para empresas e colaboradores.",
+        "image": "/img/seguro-odonto1.png",
+        "details": {
+          "intro": "A saúde bucal é de extrema importância. É comprovado que uma boa saúde bucal garante uma melhora de bem-estar e a prevenção de outras doenças.",
+          "body": "Por isso, a Contrato Corretora de Seguros desenvolve serviços exclusivos para melhor atender seus clientes (segurados). Para nós, seguro não é apenas um serviço. É uma forma de proteger e melhorar a sua vida. Pensando sempre no presente e no futuro, o Seguro Odontológico pode ser o diferencial positivo para sua empresa na hora de contratar. Justamente por garantir mais bem-estar para o seu funcionário. E, quando um colaborador está feliz consigo mesmo, seu rendimento aumenta e a produção para a empresa, também.",
+          "highlights": [
+            "Atendimento odontológico especializado",
+            "Prevenção de doenças associadas à saúde bucal",
+            "Maior bem-estar para colaboradores",
+            "Impacto positivo na produtividade da empresa"
+          ]
+        }
+      },
+      {
+        "name": "Outros Seguros",
+        "description": "Soluções completas que vão além do seguro automotivo.",
+        "image": "/img/seguro-outros.png",
+        "details": {
+          "intro": "A Contrato Corretora oferece muito mais do que apenas proteção para o seu veículo. Pensando na sua tranquilidade e segurança em todas as áreas da vida, trabalhamos também com seguros residenciais, empresariais e diversos outros ramos.",
+          "body": "Nossos serviços são personalizados de acordo com a sua necessidade, garantindo proteção tanto para o seu patrimônio quanto para a sua família. Seja para proteger sua casa, empresa ou até mesmo bens específicos, você conta com nossa experiência e orientação especializada.",
+          "highlights": [
+            "Seguro Residencial: proteção contra incêndios, furtos e danos elétricos",
+            "Seguro Empresarial: cobertura para seu negócio e funcionários",
+            "Seguro Saúde e Odontológico: planos sob medida para empresas e famílias",
+            "Demais ramos: soluções personalizadas para cada perfil"
+          ]
+        }
       }
     ]
+  },
+  "banner": {
+    "logo": "/img/logo-contrate.png",
+    "title": "CONHEÇA A NOVIDADE!",
+    "highlight": "Agora você pode contratar seu Seguro de Vida de Convenção Coletiva totalmente online, com toda praticidade e conveniência.",
+    "features": [
+      "Ambiente 100% Seguro e Online",
+      "Contratação em poucos minutos",
+      "Emissão Imediata do Contrato",
+      "Início da vigência após o pagamento"
+    ],
+    "button": {
+      "text": "Acessar",
+      "link": "#"
+    }
+  },
+  "footer": {
+    "logo": "/img/logo-pequena.png",
+    "text": "Contrate agora mesmo nossos serviços. Confiança e inovação para você e sua empresa.",
+    "address": "Av. Marquês de São Vicente, 446\n8º Andar, Sala 809 - Barra Funda\nSão Paulo, SP - CEP 01139-000",
+    "phones": {
+      "capital": "(11) 3662-3996",
+      "other": "0800 772 3996"
+    },
+    "email": "atendimento@contratoseguros.com.br"
+  },
+  "instituto": {
+    "logo": "/img/iae.png",
+    "title": "Auxílio gratuito em caso de sinistros",
+    "sections": [
+      {
+        "heading": "O QUE É IAE?",
+        "body": "O IAE - Instituto de Ajuda Ebenezer - é um instituto criado com o intuito de ajudar famílias sinistradas que possuem seguro de vida com a Contrato Corretora de Seguros. O atendimento é gratuito e as despesas são mantidas pela Contrato Corretora de Seguros nos casos de famílias que perdem a pessoa provedora de renda. O IAE possui uma equipe especializada para ampará-las desde o ocorrido até a finalização do sinistro."
+      },
+      {
+        "heading": "O QUE FAZ?",
+        "body": "Assim que existe o sinistro, o IAE atua agilizando a documentação para o pagamento da indenização. Além disso, através de visitas monitoradas de assistentes sociais, o IAE avalia o grau de vulnerabilidade das famílias podendo iniciar de imediato um atendimento para que o nível sócio-econômico seja mantido."
+      }
+    ],
+    "activities": [
+      "Visitas domiciliares e entrevistas para avaliação da família",
+      "Pesquisa sócio-economica e familiar",
+      "Atendimento aos segurados e seus dependentes",
+      "Levantamento de dados para diagnóstico social",
+      "Avaliação do perfil das pessoas para melhor orientação no atendimento e defesa dos seus direitos",
+      "Encaminhamento a serviços especializados, se necessário"
+    ],
+    "extra": "Todo atendimento do IAE é GRATUITO para todas as partes, sem custos para empresa, funcionário ou contabilidade – o Instituto busca garantir que o valor da indenização chegue aos familiares fragilizados, sem a necessidade de contratação de advogados ou outros profissionais.",
+    "investment": "Todo investimento é feito pela Contrato Corretora de Seguros, visando sempre a qualidade de vida dos segurados e as atividades desenvolvidos pelo IAE.",
+    "contactTitle": "EM CASO DE SINISTRO, LIGUE:",
+    "phones": {
+      "capital": "(11) 3664-3996",
+      "other": "0880 772 3996"
+    }
   }
 }
