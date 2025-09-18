@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-import content from "../../content.json" // ajusta o caminho conforme sua estrutura
+import content from "../../content.json"
 
-export default function InstitutoIAEPage() {
-    const instituto = content.instituto
+export default function SobrePage() {
+    const sobre = content.sobre
 
     return (
         <>
@@ -39,53 +39,45 @@ export default function InstitutoIAEPage() {
 
             {/* Conteúdo principal */}
             <main className="max-w-6xl mx-auto px-6 py-16">
-                {/* Logo do Instituto */}
-                <div className="flex justify-center mb-10">
-                    <Image
-                        src={instituto.logo}
-                        alt="Logo Instituto IAE"
-                        width={220}
-                        height={100}
-                        className="rounded-md  shadow-md bg-blue-200 p-6"
-                    />
-                </div>
+                {/* Logo da página */}
+                {sobre.logo && (
+                    <div className="flex justify-center mb-10">
+                        <Image
+                            src={sobre.logo}
+                            alt="Logo Sobre nós"
+                            width={300}
+                            height={300}
+                            className="rounded-md shadow-md "
+                        />
+                    </div>
+                )}
 
                 {/* Título */}
-                <h1 className="text-3xl font-bold text-blue-800 mb-5 text-center">
-                    {instituto.title}
-                </h1>
+                <h1 className="text-3xl font-bold text-blue-800 mb-6 text-center">{sobre.title}</h1>
 
-                {/* Seções */}
-                {instituto.sections.map((section, idx) => (
-                    <div key={idx} className="mb-3">
-                        <h2 className="text-2xl font-bold text-blue-700 mb-2">{section.heading}</h2>
-                        <p className="text-lg text-gray-700 leading-relaxed">{section.body}</p>
-                    </div>
-                ))}
+                {/* Intro */}
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center">
+                    {sobre.intro}
+                </p>
 
-                {/* Atividades */}
-                <div className="mb-6 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-blue-700 mb-3">Atividades exercidas:</h3>
+                {/* História */}
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    {sobre.history}
+                </p>
+
+                {/* Cultura */}
+                <p className="text-lg text-gray-700 leading-relaxed mb-12">
+                    {sobre.culture}
+                </p>
+
+                {/* Destaques */}
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-lg shadow-sm">
+                    <h2 className="text-2xl font-semibold text-blue-700 mb-4">Nossos Destaques</h2>
                     <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                        {instituto.activities.map((item: string, idx: number) => (
+                        {sobre.highlights.map((item: string, idx: number) => (
                             <li key={idx}>{item}</li>
                         ))}
                     </ul>
-                </div>
-
-                {/* Texto extra */}
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">{instituto.extra}</p>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">{instituto.investment}</p>
-
-                {/* Contato */}
-                <div className="bg-blue-100 border border-blue-300 p-6 rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold text-blue-800 mb-2">{instituto.contactTitle}</h3>
-                    <p className="text-gray-800">
-                        São Paulo (Capital): <span className="font-bold">{instituto.phones.capital}</span>
-                    </p>
-                    <p className="text-gray-800">
-                        Demais Localidades: <span className="font-bold">{instituto.phones.other}</span>
-                    </p>
                 </div>
             </main>
 

@@ -102,7 +102,7 @@
     ],
     "button": {
       "text": "Acessar",
-      "link": "#"
+      "link": "https://contratesegurosdigitais.com.br/"
     }
   },
   "footer": {
@@ -143,5 +143,20 @@
       "capital": "(11) 3664-3996",
       "other": "0880 772 3996"
     }
+  },
+  "sobre": {
+    "logo": "/img/logo-hd.png",
+    "title": "Contrato Seguros",
+    "intro": "A Contrato Corretora de Seguros. Preço justo e atendimento diferenciado.",
+    "history": "Desde sua fundação em 1992, a Contrato Corretora de Seguros evoluiu junto com as tendências de mercado, consolidando-se com ferramentas exclusivas que possibilitam a comercialização desde um microsseguro até soluções específicas e personalizadas que atendam às diversas necessidades de seus clientes.",
+    "culture": "A Contrato Corretora de Seguros, em seu princípio, busca disseminar uma cultura de proteção conscientizando seus clientes da importância do Seguro.",
+    "highlights": [
+      "Mais de 140 mil vidas seguradas",
+      "27 anos no mercado Segurador",
+      "Mais de 12 mil empresas seguradas",
+      "Presente em todo território nacional",
+      "Sinistro humanizado",
+      "Mais de 100 sindicatos parceiros"
+    ]
   }
 }

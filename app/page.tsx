@@ -40,10 +40,9 @@ export default function HomePage() {
       {/* Navbar abaixo do header */}
       <nav className="w-full bg-gray-100 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 flex justify-center md:justify-start gap-8 py-3 text-sm font-medium ml-[10px]">
+          <a href="/contrate-seguros" className="hover:text-blue-600">Home</a>
           <a href="/instituto-iae" className="hover:text-blue-600">Instituto IAE</a>
           <a href="/sobre" className="hover:text-blue-600">Sobre nós</a>
-          <a href="/contrate-seguros" className="hover:text-blue-600">Contrate Seguros</a>
-          <a href="/boleto" className="hover:text-blue-600">Boleto</a>
         </div>
       </nav>
 
@@ -128,7 +127,7 @@ export default function HomePage() {
                       {/* Botão Saiba Mais com modal */}
                       <Dialog>
                         <DialogTrigger asChild>
-                          <Button className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-[#15f5ba] rounded-lg hover:bg-[#13d9a6] focus:ring-4 focus:outline-none focus:ring-[#15f5ba]/50">
+                          <Button className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none">
                             Saiba Mais
                             <svg
                               className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
@@ -180,7 +179,7 @@ export default function HomePage() {
                         href="https://wa.me/5511932371093"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none"
                       >
                         Contratar
                       </a>
@@ -259,12 +258,12 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li>
-                  <a href="/contrate-seguros" className="hover:text-blue-400">
-                    Contrate Seguros
+                  <a href="http://localhost:3000/" className="hover:text-blue-400">
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a href="/boleto" className="hover:text-blue-400">
+                  <a href="https://ihs4.azurewebsites.net/Login" className="hover:text-blue-400">
                     Boleto
                   </a>
                 </li>
@@ -316,8 +315,6 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
-
-
       </main>
     </>
   );
