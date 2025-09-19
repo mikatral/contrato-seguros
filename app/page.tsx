@@ -40,7 +40,7 @@ export default function HomePage() {
       {/* Navbar abaixo do header */}
       <nav className="w-full bg-gray-100 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 flex justify-center md:justify-start gap-8 py-3 text-sm font-medium ml-[10px]">
-          <a href="/contrate-seguros" className="hover:text-blue-600">Home</a>
+          <a href="http://localhost:3000" className="hover:text-blue-600">Home</a>
           <a href="/instituto-iae" className="hover:text-blue-600">Instituto IAE</a>
           <a href="/sobre" className="hover:text-blue-600">Sobre nós</a>
         </div>
