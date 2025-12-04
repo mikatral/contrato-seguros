@@ -27,49 +27,57 @@
     "items": [
       {
         "name": "Seguro de Convenção Coletiva",
-        "description": "Proteção completa para empresas e sindicatos em convenções coletivas.",
+        "description": "Proteção completa para empresas e seus colaboradores em atendimento nas convenções coletivas de trabalho.",
         "image": "/img/seguro-convencao.png",
         "details": {
           "intro": "A Contrato Corretora de Seguros atua em mais de 100 Convenções Coletivas...",
-          "body": "Diversas categorias se preocupam e tornam obrigatório o seguro de vida para seus colaboradores...",
+          "body": "Nosso processo de contratação é agil, simples e desburocratico",
           "highlights": [
-            "Seguro a partir de 1 vida",
-            "Contratação Simplificada",
+            "Contratação a partir de 1 colaborador",
+            "Contratação simplificada e ágil",
             "100% das exigências da CCT",
-            "Sistema de Cobrança próprio",
+            "Sistema de cobrança próprio",
             "Sem limite de idade",
             "Opção de não identificação das vidas",
-            "0800 para todo território Nacional",
+            "0800 para todo o território nacional",
             "Atendimento de sinistro especializado e humanizado"
           ]
         }
       },
       {
         "name": "Seguro de Vida",
-        "description": "Planos coletivos de saúde com cobertura nacional.",
+        "description": "Apólices em grupo ou individual.",
         "image": "/img/seguro-vida1.png",
         "details": {
-          "intro": "Texto introdutório sobre seguro de vida...",
-          "body": "Mais explicações sobre benefícios do seguro de vida...",
+          "intro": "Seguro de Vida em Grupo",
+          "body": "Para empresas a partir de dois colaboradores. Apólices personalizadas de acordo com a necessidade de cada empresa.",
+          "extraTitle": "Seguro de Vida Individual",
+          "extraBody": "Para pessoas que buscam proteção pessoal e familiar.",
           "highlights": [
+            "Proteção familiar",
+            "Proteção para diagnóstico de doenças graves",
+            "Proteção de renda",
+            "Proteção em caso de invalidez",
+            "Auxílio-funeral",
+            "Proteção diária e despesas médicas e hospitalares",
             "Cobertura nacional",
             "Planos flexíveis",
             "Benefícios para dependentes"
           ]
         }
       },
+
       {
         "name": "Seguro Odontológico",
         "description": "Bem-estar e prevenção com atendimento odontológico especializado para empresas e colaboradores.",
         "image": "/img/seguro-odonto1.png",
         "details": {
-          "intro": "A saúde bucal é de extrema importância. É comprovado que uma boa saúde bucal garante uma melhora de bem-estar e a prevenção de outras doenças.",
-          "body": "Por isso, a Contrato Corretora de Seguros desenvolve serviços exclusivos para melhor atender seus clientes (segurados). Para nós, seguro não é apenas um serviço. É uma forma de proteger e melhorar a sua vida. Pensando sempre no presente e no futuro, o Seguro Odontológico pode ser o diferencial positivo para sua empresa na hora de contratar. Justamente por garantir mais bem-estar para o seu funcionário. E, quando um colaborador está feliz consigo mesmo, seu rendimento aumenta e a produção para a empresa, também.",
+          "intro": "Atendimento nacional em rede credenciada, mais de 8 mil profissionais",
+          "body": "",
           "highlights": [
-            "Atendimento odontológico especializado",
-            "Prevenção de doenças associadas à saúde bucal",
-            "Maior bem-estar para colaboradores",
-            "Impacto positivo na produtividade da empresa"
+            "Planos a partir de R$ 15,00 (Porto Seguro)",
+            "Adesão a partir de um colaborador para empresas com obrigatoriedade em CCT",
+            "Adesão a partir de 3 colaboradores para empresas sem obrigatoriedade em CCT"
           ]
         }
       },
@@ -152,7 +160,7 @@
     "culture": "A Contrato Corretora de Seguros, em seu princípio, busca disseminar uma cultura de proteção conscientizando seus clientes da importância do Seguro.",
     "highlights": [
       "Mais de 140 mil vidas seguradas",
-      "27 anos no mercado Segurador",
+      "33 anos no mercado Segurador",
       "Mais de 12 mil empresas seguradas",
       "Presente em todo território nacional",
       "Sinistro humanizado",

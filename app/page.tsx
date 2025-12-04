@@ -1,13 +1,31 @@
 import Image from "next/image";
+import Link from "next/link";
 import content from "../content.json";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
+import { Button } from "@/components/ui/button";
+
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 export default function HomePage() {
   return (
@@ -39,13 +57,30 @@ export default function HomePage() {
 
       {/* Navbar abaixo do header */}
       <nav className="w-full bg-gray-100 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 flex justify-center md:justify-start gap-8 py-3 text-sm font-medium ml-[10px]">
-          <a href="http://localhost:3000" className="hover:text-blue-600">Home</a>
-          <a href="/instituto-iae" className="hover:text-blue-600">Instituto IAE</a>
-          <a href="/sobre" className="hover:text-blue-600">Sobre nós</a>
+        <div className="max-w-10xl mx-auto px-6 py-3 flex justify-center md:justify-start">
+          <NavigationMenu>
+            <NavigationMenuList className="gap-4">
+              <NavigationMenuItem>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
+                  <Link href="/">Home</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
+                  <Link href="/instituto-iae">Instituto IAE</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
+                  <Link href="/sobre">Sobre nós</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
       </nav>
-
 
       {/* Conteúdo principal */}
       <main>
@@ -62,9 +97,6 @@ export default function HomePage() {
                   {content.hero.text}
                 </p>
               )}
-              {/*<button className="bg-white text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm w-fit">
-                {content.hero.cta}
-              </button>*/}
             </div>
           </div>
 
@@ -73,18 +105,17 @@ export default function HomePage() {
             <Carousel className="w-full max-w-md" opts={{ loop: true }}>
               <CarouselContent>
                 {content.hero.carousel.map((img, index) => (
-                  <CarouselItem key={index}>
+                  <CarouselItem key={index} className="flex items-center justify-center">
                     <Image
                       src={img}
                       alt={`Slide ${index + 1}`}
                       width={600}
                       height={300}
-                      className="h-full w-auto object-contain"
+                      className="w-full h-[260px] object-contain"
                     />
                   </CarouselItem>
                 ))}
               </CarouselContent>
-
             </Carousel>
           </div>
         </section>
@@ -102,7 +133,7 @@ export default function HomePage() {
               {content.services.items.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition flex flex-col" // 👈 flex vertical
+                  className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition flex flex-col"
                 >
                   <Image
                     className="rounded-t-lg w-full h-[200px] object-cover"
@@ -121,7 +152,6 @@ export default function HomePage() {
                       {service.description}
                     </p>
 
-                    {/* Modal individual para cada card */}
                     {/* Área dos botões */}
                     <div className="flex gap-3 mt-4">
                       {/* Botão Saiba Mais com modal */}
@@ -150,25 +180,48 @@ export default function HomePage() {
                         <DialogContent>
                           <DialogHeader>
                             <DialogTitle>{service.name}</DialogTitle>
-                            <DialogDescription>{service.description}</DialogDescription>
+                            <DialogDescription>
+                              {service.description}
+                            </DialogDescription>
                           </DialogHeader>
 
-                          {/* Intro */}
+                          {/* Bloco: Seguro em Grupo */}
                           {service.details?.intro && (
-                            <p className="text-gray-700 mb-4">{service.details.intro}</p>
+                            <div className="mb-4">
+                              <h4 className="text-base font-semibold text-gray-900 mb-1">
+                                {service.details.intro}
+                              </h4>
+                              {service.details?.body && (
+                                <p className="text-gray-700">
+                                  {service.details.body}
+                                </p>
+                              )}
+                            </div>
                           )}
 
-                          {/* Body */}
-                          {service.details?.body && (
-                            <p className="text-gray-700 mb-4">{service.details.body}</p>
+                          {/* Bloco: Seguro Individual (opcional) */}
+                          {service.details?.extraTitle && (
+                            <div className="mb-4">
+                              <h4 className="text-base font-semibold text-gray-900 mb-1">
+                                {service.details.extraTitle}
+                              </h4>
+                              {service.details?.extraBody && (
+                                <p className="text-gray-700">
+                                  {service.details.extraBody}
+                                </p>
+                              )}
+                            </div>
                           )}
+
 
                           {/* Highlights */}
                           {service.details?.highlights && (
                             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                              {service.details.highlights.map((item: string, idx: number) => (
-                                <li key={idx}>{item}</li>
-                              ))}
+                              {service.details.highlights.map(
+                                (item: string, idx: number) => (
+                                  <li key={idx}>{item}</li>
+                                )
+                              )}
                             </ul>
                           )}
                         </DialogContent>
@@ -188,7 +241,6 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-
           </div>
         </section>
 
@@ -237,12 +289,10 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
         {/* Footer */}
         <footer className="w-full bg-black text-gray-200 py-12 mt-12">
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
-
-
-
             {/* Mapa do site */}
             <div>
               <h4 className="font-semibold text-white mb-2">Mapa do Site</h4>
@@ -258,12 +308,15 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li>
-                  <a href="http://localhost:3000/" className="hover:text-blue-400">
+                  <a href="/" className="hover:text-blue-400">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="https://ihs4.azurewebsites.net/Login" className="hover:text-blue-400">
+                  <a
+                    href="https://ihs4.azurewebsites.net/Login"
+                    className="hover:text-blue-400"
+                  >
                     Boleto
                   </a>
                 </li>
@@ -297,11 +350,15 @@ export default function HomePage() {
               <h4 className="font-semibold text-white mb-2">Contato</h4>
               <p className="text-sm text-gray-400">
                 São Paulo (Capital):{" "}
-                <span className="text-blue-400">{content.footer.phones.capital}</span>
+                <span className="text-blue-400">
+                  {content.footer.phones.capital}
+                </span>
               </p>
               <p className="text-sm text-gray-400">
                 Demais localidades:{" "}
-                <span className="text-blue-400">{content.footer.phones.other}</span>
+                <span className="text-blue-400">
+                  {content.footer.phones.other}
+                </span>
               </p>
               <p className="text-sm text-gray-400 mt-2">
                 <span className="text-white font-medium">E-mail:</span>{" "}
