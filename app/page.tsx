@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <>
       {/* Header */}
-      <header className="flex items-center justify-between px-8 py-2 shadow-md">
+      <header className="sticky top-0 z-50 flex items-center justify-between px-8 py-2 shadow-md bg-white">
         <div className="flex items-center gap-3">
           {/* Logo Icon */}
           <Image
