@@ -49,6 +49,10 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
 
+        {/* RD Station Marketing */}
+        <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/3c68f859-93c1-450a-9244-d6ec93b0949a-loader.js" ></script>
+
+
         {children}
       </body>
     </html>
